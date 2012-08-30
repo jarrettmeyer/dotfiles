@@ -1,3 +1,10 @@
+# Setup some colors
+green=$(tput setaf 2)
+blue=$(tput setaf 4)
+bold=$(tput bold)
+red=$(tput setaf 1)
+reset=$(tput sgr0)
+
 # Include completion for git
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source ~/.git-prompt.sh
@@ -5,7 +12,7 @@ source ~/.git-prompt.sh
 # Begone, non-colored terminal!
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export TERM=xterm-color
-export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+export PS1='[\u@\h \W\[$green\]$(__git_ps1 " (%s)")\[$reset\]]\$ '
 export GREP_OPTIONS="--color"
 
 # Erase duplicates in history

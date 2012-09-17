@@ -32,7 +32,7 @@ export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PAT
 eval "$(rbenv init -)"
 
 # Friendly aliases
-alias blog='cd ~/projects/heroku/blog'
+alias blog='cd ~/projects/blog'
 alias dir='ls -lahs'
 alias e='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias g='git'

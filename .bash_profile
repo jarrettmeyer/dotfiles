@@ -25,7 +25,7 @@ export HISTSIZE=10000
 shopt -s histappend
 
 # Add some love to the path
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # Enable rbenv shims
 # For more about rbenv: https://github.com/sstephenson/rbenv
@@ -38,6 +38,8 @@ alias e='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias g='git'
 alias ll='ls -lah'
 alias ls='ls -G'
+alias reload_profile='. $HOME/.bash_profile'
+alias t3='cd $HOME/projects/t3'
 alias ~='cd ~'
 
 

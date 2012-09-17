@@ -35,6 +35,7 @@ eval "$(rbenv init -)"
 alias blog='cd ~/projects/blog'
 alias dir='ls -lahs'
 alias e='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias edit='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias g='git'
 alias ll='ls -lah'
 alias ls='ls -G'

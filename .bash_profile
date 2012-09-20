@@ -41,6 +41,8 @@ alias ll='ls -lah'
 alias ls='ls -G'
 alias reload_profile='. $HOME/.bash_profile'
 alias t3='cd $HOME/projects/t3'
+alias vi='mvim -v'
+alias vim='mvim -v'
 alias ~='cd ~'
 
 

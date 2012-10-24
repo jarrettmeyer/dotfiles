@@ -14,6 +14,7 @@
 	aa = add --all
 	m = merge
 	pom = push origin master
+	phm = push heroku master
 
 	# Friendly logs, inspired by Gary Bernhardt
 	l = "!source ~/.githelpers && pretty_git_log"

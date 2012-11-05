@@ -37,8 +37,10 @@ let mapleader=","
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hlsearch
-set incsearch
+set hlsearch       " highlight matching search results
+set incsearch      " use incremental search
+set ignorecase     " ignore case when searching...
+set smartcase      " ...unless caps were explicitly used in search
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -60,6 +62,12 @@ nmap <leader>sv :so $MYVIMRC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Because I suck at letting up the shift key
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap :W :w
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -31,7 +31,9 @@ set showmatch
 set number            " show line numbers
 set shell=bash
 set showcmd
+set cursorline
 let mapleader=","
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,10 +78,17 @@ nmap :W :w
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" A few handy mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>rs   :!clear;rspec --color %
+nmap <leader>nu   :!clear;nodeunit %
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Moving around
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap j gj      " move down actual lines on the screen, not real lines in file
-nmap k gk
+"nmap j gj      " move down actual lines on the screen, not real lines in file
+"nmap k gk
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

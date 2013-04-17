@@ -1,4 +1,4 @@
-files=( ".bash_profile" ".gitconfig" ".githelpers" ".vimrc" )
+files=( ".bash_profile" ".gitconfig" ".githelpers" ".git-prompt.sh" ".vimrc" )
 for file in "${files[@]}"
 do
   echo "Copying '$file'..."

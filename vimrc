@@ -39,6 +39,9 @@ map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Help:
 "
+" These are just the commands that I tend to forget.
+"
+" :bd                  Delete buffer (close).
 " :Helptags            Generate help tags for loaded bundles.
 " :scriptnames         List what scripts were loaded.
 " :set runtimepath?    Show the script path(s).

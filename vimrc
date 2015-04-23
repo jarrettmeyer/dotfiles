@@ -5,9 +5,19 @@ set nocompatible
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set number
-set ruler
-set showcmd
+set history=1000
+set hidden      " Hide buffers, instead of closing them.
+set number      " Show line numbers.
+set ruler       " Show cursor location.
+set showcmd	    " Show the command bar.
+set directory=$HOME/.vim/swapfiles//
+set showmatch
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+set laststatus=2
 let mapleader=","
 
 

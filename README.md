@@ -4,7 +4,7 @@ These are my dotfiles.
 
 ## Prerequisites
 
-+ `git`.
++ `git`. *That one was obvious, right?*
 + `zsh`. This will probably work with `bash`, too, but I make no promises.
 
 ## Usage

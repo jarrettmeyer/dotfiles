@@ -5,7 +5,7 @@ set nocompatible
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set history=1000
+set history=10000
 set hidden      " Hide buffers, instead of closing them.
 set number      " Show line numbers.
 set ruler       " Show cursor location.
@@ -19,6 +19,13 @@ set softtabstop=2
 set autoindent
 set laststatus=2
 let mapleader=","
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set the color.
+" Color schemes are from https://github.com/flazz/vim-colorschemes
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme vividchalk
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,3 +52,4 @@ map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
 " :Helptags            Generate help tags for loaded bundles.
 " :scriptnames         List what scripts were loaded.
 " :set runtimepath?    Show the script path(s).
+" :source $MYVIMRC     Reload your ~/.vimrc file.

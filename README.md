@@ -2,6 +2,11 @@
 
 These are my dotfiles.
 
+## Prerequisites
+
++ `git`.
++ `zsh`. This will probably work with `bash`, too, but I make no promises.
+
 ## Usage
 
 This one is easy.

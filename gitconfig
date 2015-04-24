@@ -1,0 +1,17 @@
+[user]
+	name = Jarrett Meyer
+	email = jarrettmeyer@gmail.com
+[color]
+	ui = auto
+[alias]
+	st = status
+	aa = add --all
+	ci = commit
+	amend = commit --amend
+	co = checkout
+	b = branch
+	cb = checkout -b
+	fa = fetch --all
+	m = merge
+	pom = push origin master
+

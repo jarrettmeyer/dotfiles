@@ -18,6 +18,10 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set laststatus=2
+set wrap        " Word wrap.
+set linebreak
+set textwidth=0
+set wrapmargin=0
 let mapleader=","
 
 
@@ -41,6 +45,13 @@ set smartcase      " ...unless caps were explicitly used in search
 " Command-T settings.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maps
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap j gj
+nmap k gk
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

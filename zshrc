@@ -65,3 +65,6 @@ alias zshconfig="vim ~/.zshrc"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# This lets global npm modules be required in the Node REPL.
+export NODE_PATH="$(npm root -g)"

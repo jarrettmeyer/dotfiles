@@ -43,7 +43,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm rbenv ruby vagrant)
+plugins=(brew git npm rbenv ruby vagrant)
 
 # User configuration
 
@@ -68,3 +68,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # This lets global npm modules be required in the Node REPL.
 export NODE_PATH="$(npm root -g)"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# Settings for Visual Studio Code
+# Assumes installed with brew install Caskroom/cask/visual-studio-code
+source /usr/local/bin/dnvm.sh
+function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }

@@ -47,7 +47,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 if [ ! -d ~/.vim/bundle/vim-colorschemes ]; then
   echo "Installing vim colorschemes."
   cd ~/.vim/bundle
-  git clone git@github.com:flazz/vim-colorschemes.git
+  git clone https://github.com/flazz/vim-colorschemes.git
 else
   echo "Updating vim colorschemes."
   cd ~/.vim/bundle/vim-colorschemes
@@ -56,7 +56,7 @@ fi
 if [ ! -d ~/.vim/bundle/vim-fugitive ]; then
   echo "Installing vim fugitive."
   cd ~/.vim/bundle
-  git clone git@github.com:tpope/vim-fugitive.git
+  git clone https://github.com/tpope/vim-fugitive.git
 else
   echo "Updating vim fugitive."
   cd ~/.vim/bundle/vim-fugitive
@@ -65,7 +65,7 @@ fi
 if [ ! -d ~/.vim/bundle/vim-javascript ]; then
   echo "Installing vim javascript."
   cd ~/.vim/bundle
-  git clone git@github.com:pangloss/vim-javascript.git
+  git clone https://github.com/pangloss/vim-javascript.git
 else
   echo "Updating vim javascript."
   cd ~/.vim/bundle/vim-javascript
@@ -74,7 +74,7 @@ fi
 if [ ! -d ~/.vim/bundle/vim-markdown ]; then
   echo "Installing vim markdown."
   cd ~/.vim/bundle
-  git clone git@github.com:tpope/vim-markdown.git
+  git clone https://github.com/tpope/vim-markdown.git
 else
   echo "Updating vim markdown."
   cd ~/.vim/bundle/vim-markdown
@@ -83,7 +83,7 @@ fi
 if [ ! -d ~/.vim/bundle/vim-sensible ]; then
   echo "Installing vim sensible."
   cd ~/.vim/bundle
-  git clone git@github.com:tpope/vim-sensible.git
+  git clone https://github.com/tpope/vim-sensible.git
 else
   echo "Updating vim sensible."
   cd ~/.vim/bundle/vim-sensible
@@ -92,7 +92,7 @@ fi
 if [ ! -d ~/.vim/bundle/command-t ]; then
   echo "Installing vim command-t."
   cd ~/.vim/bundle
-  git clone git@github.com:wincent/command-t.git
+  git clone https://github.com/wincent/command-t.git
   cd ./command-t/ruby/command-t
   ruby extconf.rb
   make

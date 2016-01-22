@@ -1,8 +1,10 @@
 [user]
 	name = Jarrett Meyer
 	email = jarrettmeyer@gmail.com
+	
 [color]
 	ui = auto
+
 [alias]
 	st = status
 	aa = add --all
@@ -15,3 +17,10 @@
 	m = merge
 	pom = push origin master
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

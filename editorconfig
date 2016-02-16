@@ -1,0 +1,23 @@
+# Where do I learn to set this up?
+# http://editorconfig.org
+
+# This is the top file.
+root = true
+
+# Settings for all types of files.
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_type = space
+insert_final_newline = true
+
+[*.py]
+indent_size = 4
+
+[*.R]
+indent_size = 4
+
+[*.rb]
+indent_size = 4
+

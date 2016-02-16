@@ -16,14 +16,11 @@ fi
 
 # Create symbolic links for dotfiles.
 echo "Creating symbolic links."
-rm ~/.gemrc
-ln -s ${PWD}/gemrc ~/.gemrc
-rm ~/.gitconfig
-ln -s ${PWD}/gitconfig ~/.gitconfig
-rm ~/.vimrc
-ln -s ${PWD}/vimrc ~/.vimrc
-rm ~/.zshrc
-ln -s ${PWD}/zshrc ~/.zshrc
+ln -s -f ${PWD}/editorconfig ~/.editorconfig
+ln -s -f ${PWD}/gemrc ~/.gemrc
+ln -s -f ${PWD}/gitconfig ~/.gitconfig
+ln -s -f ${PWD}/vimrc ~/.vimrc
+ln -s -f ${PWD}/zshrc ~/.zshrc
 
 # Create the necessary vim folders.
 if [ ! -d ~/.vim/autoload ]; then

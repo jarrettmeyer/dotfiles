@@ -75,3 +75,6 @@ export PATH=$PATH:$GOPATH/bin
 # Assumes installed with brew install Caskroom/cask/visual-studio-code
 source /usr/local/bin/dnvm.sh
 function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
+
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include

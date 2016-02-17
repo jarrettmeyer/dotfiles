@@ -8,7 +8,7 @@ filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle for plugin management.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 Plugin 'vundlevim/vundle.vim' " Let Vundle manage Vundle
 Plugin 'tpope/vim-sensible'

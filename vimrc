@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'jcfaria/vim-r-plugin'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
 
 

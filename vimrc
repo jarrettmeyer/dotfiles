@@ -21,6 +21,7 @@ Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'jcfaria/vim-r-plugin'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 
 
@@ -66,12 +67,6 @@ set smartcase      " ...unless caps were explicitly used in search
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Command-T settings.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" map <leader>t :Flush<cr>\|:CommandT<cr>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maps
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap j gj
@@ -92,4 +87,4 @@ nmap <C-L> <C-W><C-L>
 " :scriptnames         List what scripts were loaded.
 " :set runtimepath?    Show the script path(s).
 " :source $MYVIMRC     Reload your ~/.vimrc file.
-" 
+

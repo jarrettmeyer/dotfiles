@@ -10,7 +10,7 @@ filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
-Plugin 'vundlevim/vundle' " Let Vundle manage Vundle
+Plugin 'vundlevim/vundle.vim' " Let Vundle manage Vundle
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'

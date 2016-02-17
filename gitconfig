@@ -5,6 +5,9 @@
 [color]
 	ui = auto
 
+[core]
+	editor = /usr/local/bin/vim
+
 [alias]
 	st = status
 	aa = add --all

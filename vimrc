@@ -2,9 +2,33 @@
 " General settings.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
-execute pathogen#infect()
-syntax on
+filetype off
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle for plugin management.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+Plugin 'vundlevim/vundle' " Let Vundle manage Vundle
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'pangloss/vim-javascript'
+Plugin 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'jcfaria/vim-r-plugin'
+call vundle#end()
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Now that all of our plugins are installed, let's get back to business.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on
+
 set history=10000
 set hidden      " Hide buffers, instead of closing them.
 set number      " Show line numbers.
@@ -44,7 +68,7 @@ set smartcase      " ...unless caps were explicitly used in search
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Command-T settings.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+" map <leader>t :Flush<cr>\|:CommandT<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -52,6 +76,10 @@ map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap j gj
 nmap k gk
+nmap <C-H> <C-W><C-H>
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-L> <C-W><C-L>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -64,3 +92,4 @@ nmap k gk
 " :scriptnames         List what scripts were loaded.
 " :set runtimepath?    Show the script path(s).
 " :source $MYVIMRC     Reload your ~/.vimrc file.
+" 

@@ -36,7 +36,3 @@ if [ ! -d ~/.vim/swapfiles ]; then
   mkdir -p ~/.vim/swapfiles
 fi
 
-# Download pathogen.
-echo "Downloading vim pathogen."
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-

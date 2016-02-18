@@ -78,6 +78,13 @@ nmap <C-L> <C-W><C-L>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn on some NERDTree love at startup.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Help:
 "
 " These are just the commands that I tend to forget.

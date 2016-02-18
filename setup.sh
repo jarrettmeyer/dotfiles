@@ -7,7 +7,7 @@ fi
 
 # Install oh-my-zsh!
 # https://github.com/robbyrussell/oh-my-zsh
-if [ -z ZSH ]; then
+if [ -z ${ZSH} ]; then
   curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
   echo "Installed Oh-My-ZSH."
 else
@@ -23,10 +23,6 @@ ln -s -f ${PWD}/vimrc ~/.vimrc
 ln -s -f ${PWD}/zshrc ~/.zshrc
 
 # Create the necessary vim folders.
-if [ ! -d ~/.vim/autoload ]; then
-  echo "Creating directory: ~/.vim/autoload"
-  mkdir -p ~/.vim/autoload
-fi
 if [ ! -d ~/.vim/bundle ]; then
   echo "Creating directory: ~/.vim/bundle"
   mkdir -p ~/.vim/bundle
